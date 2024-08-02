@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const mailSender = async (email, title, body) => {
   try {
     // Create a Transporter to send emails
+    // TODO : j'ai utilisé ce mail parce que je n'ai pas trouvé comment générer un code application.
     let transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       auth: {
